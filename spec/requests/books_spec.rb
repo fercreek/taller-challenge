@@ -54,6 +54,8 @@ RSpec.describe 'Books Spec', type: :request do
       end
     end
 
+    # Based on the requierment, we follow the same pattern as book reseved, but depending if we use a
+    # # user model, or another model to store the emial
     # context 'when the user_email is not provided' do (not generated for the time)
     # end
   end
