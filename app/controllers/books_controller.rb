@@ -3,6 +3,8 @@ class BooksController < ApplicationController
 
   # GET /books
   def index
+    # To optimize index, I add pagination like pagy or kaminary, and ransack gem for search
+    # If we have n + 1 query issue, using includes but the related models
     @books = Book.all
 
     render json: @books
