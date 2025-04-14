@@ -1,24 +1,8 @@
-# README
+# Taller Challenge JS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Those are my notes for the Taller Challenge
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Should I create a user model or is it part of the requirements?
+* I'll assume that I can use commits to version the progress.
+* Let's start with the scaffold for books and then iterate.
+* Once the base is set up, let's work on the reserve endpoint.

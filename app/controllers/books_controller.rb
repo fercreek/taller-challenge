@@ -27,6 +27,14 @@ class BooksController < ApplicationController
   # POST /books/:id/reserve
   def reserve
     @book = Book.find(params[:id])
+
+    # If we have many book, status we can handle this in a better way
+    # getting better error and translates if is necesary
+    if @book.reserved?
+      render json: { error: "Book is already reserved" }, status: :unprocessable_entity
+      return
+    end
+
     @book.status = :reserved
     @book.user_email = params[:user_email]
 
